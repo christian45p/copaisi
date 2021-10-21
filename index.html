@@ -5,64 +5,414 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/miestilo.css">
-    <title>Document</title>
+    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <title>Copaisi</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var height = $(window).height();
+            var width = $(window).width();
+            $('.titulo').height(height);
+            $('.titulo').width(width);
+        });
+    </script>
 </head>
 <body>
-
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar scroll</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Link
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Link</a>
-                </li>
-                </ul>
-                <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
             </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">COPAISI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cronograma">Cronograma</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
-
-    <button class="ad">ad</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">gaaaaa xd</button>
-    <button type="button" class="btn btn-warning">clintonu.u</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-
-    <button type="button" class="btn btn-link">Link</button>
-
+    <!--TITULO-->
+    <div class="titulo">
+        <div class="fondo">
+            <div class="titulo_gen">
+                <div class="logos ">
+                    <img class="logos_uni" src="images/Logo_UNAP.png">
+                </div>
+                <div class="esp_titu">&nbsp;</div>
+                <div class="titulo_gen1">II Congreso Internacional Peruano - Argentino de Ingeniería de Sistemas e Informática </div>
+                <div id="cuenta_regresiva">
+                    <ul>
+                        <li><span id="dias"></span>Dias</li>
+                        <li><span id="horas"></span>Horas</li>
+                        <li><span id="minutos"></span>Minutos</li>
+                        <li><span id="segundos"></span>Segundos</li>
+                    </ul>
+                </div>
+                <div class="titulo_gen1">(Del 7 al 12 de Noviembre) <br>COPAISI - 2020</div>
+                <br>
+                <div class="button_registro">
+                    <button class="button">Registrarme</button>
+                </div>
+            </div>
+        </div> 
+    </div>
     
+    
+    <div class="container">
+    <!--PRESENTACION-->
+    
+    <div class="container text-center mt-5 mb-2">
+        <h1 class="mb-0">Presentacion</h1>
+    </div>
+      
+    <div class="container mt-3">
+        <div class="row align-items-center" >
+            <div class="col-lg-4 ">
+            <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/unappresent1.jpg" class="d-block w-100 rounded-3" alt="10">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/unappresent1.jpg" class="d-block w-100" alt="10">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                    <img src="images/dots.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
 
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body text-center"> 
+                        <h5 class="card-title mt-2 mb-1">Rusty Monge</h5> <span class="fs-2 mb-3 font-weight-bold">Graphics Designer</span>
+                        <p class="mb-3 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                            standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------PONENTES NO TOCAR armindo estuvo aqui-->
+    <div class="container text-center mt-5 mb-2">
+        <h1 class="mb-0">Ponentes</h1>
+    </div>
+    <div class="container mt-3">
+        <div class="container-fluid d-flex justify-content-center mt-100">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <ul class="list-group-item">
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body text-center"> <img src="https://i.imgur.com/cAdLHeY.jpg" class="rounded-circle" width="200" height="200">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy "</p></li>
+                                <ul class="list-group-item">
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body text-center"> <img src="https://i.imgur.com/tT8rjKC.jpg" class="rounded-circle" width="200" height="200">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <ul class="list-group-item">
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="container-fluid d-flex justify-content-center mt-100">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <ul class="list-group-item">
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body text-center"> <img src="https://i.imgur.com/cAdLHeY.jpg" class="rounded-circle" width="200" height="200">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <ul class="list-group-item">
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-body text-center"> <img src="https://i.imgur.com/tT8rjKC.jpg" class="rounded-circle" width="200" height="200">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <ul class="list-group-item">
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+        <div class="container mt-3">
+            <div class="container-fluid d-flex justify-content-center mt-100">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-3">
+                            <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                    <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                    <ul class="list-group-item">
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="card mb-3">
+                            <div class="card-body text-center"> <img src="https://i.imgur.com/cAdLHeY.jpg" class="rounded-circle" width="200" height="200">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                    <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                    <ul class="list-group-item">
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3">
+                            <div class="card-body text-center"> <img src="https://i.imgur.com/tT8rjKC.jpg" class="rounded-circle" width="200" height="200">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                                    <li class="list-group-item"><p class="mb-3 mt-3 ">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                    <ul class="list-group-item">
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                                    <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------  -->
+    
+    <div class="container">
+        <div id="cronograma" class="container text-center mt-5 mb-2">
+            <h1 class="mb-3">Cronograma</h1>
+            <br>
+        </div>
+        
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                <th scope="col">Hora</th>
+                <th scope="col">1 de Diciembre</th>
+                <th scope="col">2 de Diciembre</th>
+                <th scope="col">3 de Diciembre</th>
+                <th scope="col">3 de Diciembre</th>
+                <th scope="col">4 de Diciembre</th>
+                <th scope="col">5 de Diciembre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <th scope="row">9:00 - 10:00</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">10:00 - 11:00</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">11:00 - 12:00</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr class="table-light">
+                    
+                    <td class = "text-center">RECESO</td>
+                    
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">15:00 - 16:00</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">16:00 - 17:00</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">18:00 - 19:00</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+        
+    <div class="container mt-5">
+        
+        <div id="cronograma" class="container text-center mt-5 mb-2">
+            <h1 class="mb-3">Actividades</h1>
+            <br>
+        </div>
+
+        <div class="card mb-3">
+        <img src="images/dots.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Actividad 1</h5>
+            <p class="card-text">Descripción completa de la actividad 1..... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero? Expedita architecto est magni ab, doloremque dicta nulla libero eius eaque voluptates ratione iure totam deserunt? Laborum, sapiente? Inventore, veniam.</p>
+            <p class="card-text"><small class="text-muted">Duración de la actividad 1</small></p>
+        </div>
+        </div>
+        <div class="card mb-3">
+        <img src="images/dots.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Actividad 2</h5>
+            <p class="card-text">Descripción completa de la actividad 2..... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero? Expedita architecto est magni ab, doloremque dicta nulla libero eius eaque voluptates ratione iure totam deserunt? Laborum, sapiente? Inventore, veniam.</p>
+            <p class="card-text"><small class="text-muted">Duración de la actividad 2</small></p>
+        </div>
+        </div>
+    </div>
+    
+    <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.js.map"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
 </body>
