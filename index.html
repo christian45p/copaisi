@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="stylesheet" href="css/prueba.css">
+    <script src="js/countdown.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <title>Copaisi</title>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -19,91 +23,84 @@
     </script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+    <div class="icon-bar" style="z-index: 1;">
+        <a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"style="background-color: #114970;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">COPABISI_LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">COPABISI</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-warning round btn-sm text-MUTE">¡INSCRIBIRME!</button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#presentacion">Presentación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ponentes">Ponentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cronograma">Cronograma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#temas">Temas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#actividades">Actividades</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">COPAISI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#cronograma">Cronograma</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+      </nav>
     <!--TITULO-->
-    <div class="titulo">
+    
+    <div class="titulo particles-js mt-5">
         <div class="fondo">
-            <div class="titulo_gen">
+            <div class="titulo_gen"></div>
                 <div class="logos ">
+                    <img class="logos_uni" src="images/Logo_UNAP.png">
+                    <img class="logos_uni" src="images/Logo_UNAP.png">
                     <img class="logos_uni" src="images/Logo_UNAP.png">
                 </div>
                 <div class="esp_titu">&nbsp;</div>
-                <div class="titulo_gen1">II Congreso Internacional Peruano - Argentino de Ingeniería de Sistemas e Informática </div>
-                <div id="cuenta_regresiva">
-                    <ul>
-                        <li><span id="dias"></span>Dias</li>
-                        <li><span id="horas"></span>Horas</li>
-                        <li><span id="minutos"></span>Minutos</li>
-                        <li><span id="segundos"></span>Segundos</li>
-                    </ul>
+                <div class="titulo_gen"> <h1>Congreso Peruano Argentino Boliviano de Ingenieria de Sistemas e Informatica</h1></div>
+                <div class="contador">
+                    <div id="timer"></div>
                 </div>
-                <div class="titulo_gen1">(Del 7 al 12 de Noviembre) <br>COPAISI - 2020</div>
                 <br>
-                <div class="button_registro">
-                    <button class="button">Registrarme</button>
+                <br>
+                <div class="titulo_gen">(Del 7 al 12 de Noviembre) <br>COPABISI - 2021</div>
+                <br>
+                
+                <div class="alert" role="alert" style="margin: 0 25vw 2vh 25vw; pad">
+                    Aun estas a tiempo de ser parte de este gran evento, Inscribete ya!
+                  </div>
+                <div class="button_registro mb-4">
+                    <button class="button">Inscribirme</button>
                 </div>
             </div>
         </div> 
+    </div>   
+<!--PRESENTACION--> 
+    <div class="container-fluid" id="presentacion">    
+    <div class="container  bg-white text-center mb-2" style="padding-top: 55px;" >
+        <h1 class="mb-0">Presentación</h1>
+        <hr>
     </div>
-    
-    
-    <div class="container">
-    <!--PRESENTACION-->
-    
-    <div class="container text-center mt-5 mb-2">
-        <h1 class="mb-0">Presentacion</h1>
-    </div>
+
       
     <div class="container mt-3">
         <div class="row align-items-center" >
@@ -128,13 +125,13 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                </div>
+            </div>
             </div>
 
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body text-center"> 
-                        <h5 class="card-title mt-2 mb-1">Rusty Monge</h5> <span class="fs-2 mb-3 font-weight-bold">Graphics Designer</span>
+                        <h5 class="card-title mt-2 mb-1">Bienvenidos</h5> <span class="fs-2 mb-3 font-weight-bold">CONGRESO COPABISI</span>
                         <p class="mb-3 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                             standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -154,34 +151,42 @@
 
         </div>
     </div>
-
     <!-------PONENTES NO TOCAR armindo estuvo aqui-->
-    <div class="container text-center mt-5 mb-2">
+    <div class="container text-center mt-5 mb-2" id="ponentes" style="background-color:white;">
         <h1 class="mb-0">Ponentes</h1>
+        <hr>
     </div>
     <div class="container mt-3">
         <div class="container-fluid d-flex justify-content-center mt-100">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card mb-3">
-                        <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
+                    <div class="card mb-3 shadow rounded">
+                        <div class="card-body text-center"> 
+                            <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3 text1">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot1">...</span>
+                                    <span class="moreText1">Lorem Ipsum has been the industry's standard dummy"</span></p>
+                                    <button type="button" class="btn btn-outline-dark btn-sm read-more-btn1">Leer más...</button>
+                                </li>
                                 <ul class="list-group-item">
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
                             </ul>
+            
                         </div>
                     </div>
                 </div> 
                 <div class="col-lg-4">
-                    <div class="card mb-3">
+                    <div class="card mb-3 shadow rounded">
                         <div class="card-body text-center"> <img src="https://i.imgur.com/cAdLHeY.jpg" class="rounded-circle" width="200" height="200">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy "</p></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3 text2">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot2">...</span>
+                                    <span class="moreText2">Lorem Ipsum has been the industry's standard dummy"</span></p>
+                                    <button type="button" class="btn btn-outline-dark btn-sm read-more-btn2">Leer más...</button>
+                                </li>
                                 <ul class="list-group-item">
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -191,11 +196,14 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card mb-3">
-                        <div class="card-body text-center"> <img src="https://i.imgur.com/tT8rjKC.jpg" class="rounded-circle" width="200" height="200">
+                    <div class="card mb-3 shadow rounded">
+                        <div class="card-body text-center"> <img src="https://cde.laprensa.e3.pe/ima/0/0/1/9/1/191745.jpg" class="rounded-circle" width="200" height="200">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3 text3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot3">...</span>
+                                    <span class="moreText3">Lorem Ipsum has been the industry's standard dummy"</span></p>
+                                    <button type="button" class="btn btn-outline-dark btn-sm read-more-btn3">Leer más...</button>
+                                </li>
                                 <ul class="list-group-item">
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -211,11 +219,14 @@
         <div class="container-fluid d-flex justify-content-center mt-100">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card mb-3">
-                        <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
+                    <div class="card mb-3 shadow rounded">
+                        <div class="card-body text-center"> <img src="https://muy-trendy.com/wp-content/uploads/2019/12/largo-con-ondas-para-cara-ovalada-529x700.jpg" class="rounded-circle" width="200" height="200">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3 text4">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot4">...</span>
+                                    <span class="moreText4">Lorem Ipsum has been the industry's standard dummy"</span></p>                
+                                    <button type="button" class="btn btn-outline-dark btn-sm read-more-btn4" >Leer más...</button>
+                                </li>
                                 <ul class="list-group-item">
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -225,11 +236,14 @@
                     </div>
                 </div> 
                 <div class="col-lg-4">
-                    <div class="card mb-3">
-                        <div class="card-body text-center"> <img src="https://i.imgur.com/cAdLHeY.jpg" class="rounded-circle" width="200" height="200">
+                    <div class="card mb-3 shadow rounded">
+                        <div class="card-body text-center"> <img src="https://www.outtengolden.com/sites/default/files/styles/attorney_photo_full/public/attorney-photos/cara-e-greene-2018-01-24.jpg?itok=xGXYUFTQ" class="rounded-circle" width="200" height="200">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3 text5">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot5">...</span>
+                                    <span class="moreText5">Lorem Ipsum has been the industry's standard dummy"</span></p>                
+                                    <button type="button" class="btn btn-outline-dark btn-sm read-more-btn5" >Leer más...</button>
+                                </li>
                                 <ul class="list-group-item">
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -239,11 +253,14 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card mb-3">
+                    <div class="card mb-3 shadow rounded">
                         <div class="card-body text-center"> <img src="https://i.imgur.com/tT8rjKC.jpg" class="rounded-circle" width="200" height="200">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
+                                <li class="list-group-item"><p class="mb-3 mt-3 text6">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot6">...</span>
+                                    <span class="moreText6">Lorem Ipsum has been the industry's standard dummy"</span></p>                
+                                    <button type="button" class="btn btn-outline-dark btn-sm read-more-btn6" >Leer más...</button>
+                                </li>
                                 <ul class="list-group-item">
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
                                 <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -255,166 +272,478 @@
             </div>
         </div>
     </div> 
-        <div class="container mt-3">
-            <div class="container-fluid d-flex justify-content-center mt-100">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card mb-3">
-                            <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                    <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
-                                    <ul class="list-group-item">
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-lg-4">
-                        <div class="card mb-3">
-                            <div class="card-body text-center"> <img src="https://i.imgur.com/cAdLHeY.jpg" class="rounded-circle" width="200" height="200">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                    <li class="list-group-item"><p class="mb-3 mt-3">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
-                                    <ul class="list-group-item">
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+<div class="container mt-3">
+    <div class="container-fluid d-flex justify-content-center mt-100">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-3 shadow rounded">
+                    <div class="card-body text-center"> <img src="https://cde.laprensa.e3.pe/ima/0/0/1/9/1/191745.jpg" class="rounded-circle" width="200" height="200">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                            <li class="list-group-item"><p class="mb-3 mt-3 text4">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot4">...</span>
+                                <span class="moreText4">Lorem Ipsum has been the industry's standard dummy"</span></p>                
+                                <button type="button" class="btn btn-outline-dark btn-sm read-more-btn4" >Leer más...</button>
+                            </li>
+                            <ul class="list-group-item">
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card mb-3">
-                            <div class="card-body text-center"> <img src="https://i.imgur.com/tT8rjKC.jpg" class="rounded-circle" width="200" height="200">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
-                                    <li class="list-group-item"><p class="mb-3 mt-3 ">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</p></li>
-                                    <ul class="list-group-item">
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                    <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
-                                </ul>
+                </div>
+            </div> 
+            <div class="col-lg-4">
+                <div class="card mb-3 shadow rounded">
+                    <div class="card-body text-center"> <img src="https://www.outtengolden.com/sites/default/files/styles/attorney_photo_full/public/attorney-photos/cara-e-greene-2018-01-24.jpg?itok=xGXYUFTQ" class="rounded-circle" width="200" height="200">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                            <li class="list-group-item"><p class="mb-3 mt-3 text5">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot5">...</span>
+                                <span class="moreText5">Lorem Ipsum has been the industry's standard dummy"</span></p>                
+                                <button type="button" class="btn btn-outline-dark btn-sm read-more-btn5" >Leer más...</button>
+                            </li>
+                            <ul class="list-group-item">
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-3 shadow rounded">
+                    <div class="card-body text-center"> <img src="https://i.imgur.com/uIgDDDd.jpg" class="rounded-circle" width="200" height="200">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h5 class="card-title mt-2 mb-1">Justin Williams</h5> <span class="fs-2 mb-3 font-weight-bold">C++ Developer</span></li>
+                            <li class="list-group-item"><p class="mb-3 mt-3 text6">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dot6">...</span>
+                                <span class="moreText6">Lorem Ipsum has been the industry's standard dummy"</span></p>                
+                                <button type="button" class="btn btn-outline-dark btn-sm read-more-btn6" >Leer más...</button>
+                            </li>
+                            <ul class="list-group-item">
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div> 
+</div>
+
+</div>
+
+    <!--cronograma ---------------------------------------------------------------------------------------------------------  -->
+   <div class="container-fluid crono">
+    <div id="cronograma" class="container text-center text-white  mb-2 cronograma" style="padding-top: 1%;">
+        <h1 class="mb-3">Cronograma</h1>
+        <hr>
+        <br>
+    </div>
+    <div class="container" style="padding-bottom: 2%;">
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-responsive-sm">        
+                        <table id="example" class="table table-striped table-bordered" style="width:100%">
+                            <thead class="table-dark">
+                                <tr>
+                                <th scope="col">Hora</th>
+                                <th scope="col">1 de Diciembre</th>
+                                <th scope="col">2 de Diciembre</th>
+                                <th scope="col">3 de Diciembre</th>
+                                <th scope="col">3 de Diciembre</th>
+                                <th scope="col">4 de Diciembre</th>
+                                <th scope="col">5 de Diciembre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-success">
+                                    <th scope="row">9:00 - 10:00</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th scope="row">10:00 - 11:00</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <th scope="row">11:00 - 12:00</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr class="table-light">
+                                    
+                                    <td class = "text-center">RECESO</td>
+                                    
+                                </tr>
+                                <tr class="table-success">
+                                    <th scope="row">15:00 - 16:00</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th scope="row">16:00 - 17:00</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <th scope="row">18:00 - 19:00</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                            </tbody>
+                    </table>                  
+                    </div>
+                </div>
+        </div>  
+    </div>
+   </div>
+       
+    <!--este div no se donde abre xd-->
+
+    <div class="container mt-5">
+        
+        <div id="temas" class="container text-center mt-5 mb-2">
+            <h1 class="mb-3">Temas</h1>
+            <hr>
+        </div>
+
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-12 text-right d-flex justify-content-center">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a> 
+                    <b style="color: white;">___</b>
+                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ultimas Tecnologías API</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
         </div>
     </div>
 
-    <!-- ---------------------------------------------------------------------------------------------------------  -->
-    
-    <div class="container">
-        <div id="cronograma" class="container text-center mt-5 mb-2">
-            <h1 class="mb-3">Cronograma</h1>
-            <br>
-        </div>
-        
-        <table class="table">
-            <thead class="table-dark">
-                <tr>
-                <th scope="col">Hora</th>
-                <th scope="col">1 de Diciembre</th>
-                <th scope="col">2 de Diciembre</th>
-                <th scope="col">3 de Diciembre</th>
-                <th scope="col">3 de Diciembre</th>
-                <th scope="col">4 de Diciembre</th>
-                <th scope="col">5 de Diciembre</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-success">
-                    <th scope="row">9:00 - 10:00</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">10:00 - 11:00</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr class="table-warning">
-                    <th scope="row">11:00 - 12:00</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr class="table-light">
-                    
-                    <td class = "text-center">RECESO</td>
-                    
-                </tr>
-                <tr class="table-success">
-                    <th scope="row">15:00 - 16:00</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">16:00 - 17:00</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr class="table-warning">
-                    <th scope="row">18:00 - 19:00</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
-    </div>
-        
+
+
     <div class="container mt-5">
         
-        <div id="cronograma" class="container text-center mt-5 mb-2">
+        <div id="actividades" class="container text-center mt-5 mb-2">
             <h1 class="mb-3">Actividades</h1>
+            <hr>
             <br>
         </div>
 
-        <div class="card mb-3">
-        <img src="images/dots.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Actividad 1</h5>
-            <p class="card-text">Descripción completa de la actividad 1..... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero? Expedita architecto est magni ab, doloremque dicta nulla libero eius eaque voluptates ratione iure totam deserunt? Laborum, sapiente? Inventore, veniam.</p>
-            <p class="card-text"><small class="text-muted">Duración de la actividad 1</small></p>
+        <div class="container mb-5">
+            <div class="row ">
+
+                <div class="col-12 text-right d-flex justify-content-center">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <b style="color: white;">___</b>
+                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+    
+                                    <div class="col-md-12 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Actividad 1</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-12 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Actividad 2</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+ 
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-12 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Actividad 3</h4>
+                                                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti dolor molestiae unde provident quas itaque recusandae perspiciatis explicabo ullam. Error, repudiandae dolorem! Doloremque saepe vitae maiores fuga veniam dolores! </p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="card mb-3">
-        <img src="images/dots.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Actividad 2</h5>
-            <p class="card-text">Descripción completa de la actividad 2..... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero? Expedita architecto est magni ab, doloremque dicta nulla libero eius eaque voluptates ratione iure totam deserunt? Laborum, sapiente? Inventore, veniam.</p>
-            <p class="card-text"><small class="text-muted">Duración de la actividad 2</small></p>
-        </div>
-        </div>
+
+
+
     </div>
+    <!-- Footer -->
+
+    <!-- FOOTER -->
+    <!-- <footer class="w-100 py-4 flex-shrink-0 text-center">
+        <div class="container-fluid pruebas py-4">
+            <div class="row gy-4 ">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">COPAISI</h5>
+                    <p class="small text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Accesos</h5>
+                    <ul class="list-unstyled text-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Actividades</h5>
+                    <ul class="list-unstyled text-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3"></h5>
+                    <p class="text-white small text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>Datos COPABISI</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Av. Floral 1203</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>+51 968 456 123</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Copabisi@episuna.edu.pe</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Universidad Nacional del Altiplano</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>EPISUNA</a></li>
+					</ul>
+				</div>	<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>Acerca de COPABISI</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Presentación</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Ponentes</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Cronograma</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Actividades</a></li>
+						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Contactos</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">Universidad Nacional del Altiplano</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">© Todos los derechos reservados. <a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">COPABISI</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+    
     
     <script src="js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.js.map"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--<script src="js/particles.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="js/prueba.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    
 </body>
 </html>
 <script>
