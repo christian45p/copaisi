@@ -7,7 +7,6 @@
 	transform: translateY(-50%);
   }
   
-  /* Style the icon bar links */
   .icon-bar a {
 	display: block;
 	text-align: center;
@@ -17,7 +16,6 @@
 	font-size: 20px;
   }
   
-  /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
 	background-color: #000;
   }
@@ -56,9 +54,11 @@
 .alert {
 	height: 3vh;
 	line-height:30px;
-	padding:0px 15px;
+	padding:0.8vh 15px 4vh;
+	font-size: 2.2vh;
 	background: RGBA(37,111,143,0.69);
 	margin: 0 25vw 2vh 25vw;
+
 	color: white;
   }
 .contador {
