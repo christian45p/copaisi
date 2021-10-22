@@ -68,7 +68,7 @@
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	font-size: 0.4em;
+	font-size: 0.3em;
 }
   
   #timer {
@@ -113,7 +113,7 @@
 	justify-content: center;
   }
   .logos_uni{
-	margin-top: 2%;
+	margin-top: 3%;
 	height: 11.5vh;
 	margin-left: 2vw;
 	
@@ -153,7 +153,6 @@
   }
 footer {
 	background: #114970;
-	color: red;
   }
 #presentacion{
 	background: url("../images/Mesa_de_trabajo_9.png") no-repeat fixed center;
@@ -165,6 +164,16 @@ footer {
     width: 100% ;
 	padding: 20px 0 20px 0;
     text-align: center;
+}
+.actividad{
+	background: url("../images/Mesa\ de\ trabajo\ –\ 10.png") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+	padding: 20px 0 20px 0;
 }
 .crono{
 	background-color: #114970;

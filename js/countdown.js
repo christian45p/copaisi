@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 (function () {
     const second = 1000,
           minute = second * 60,
@@ -42,7 +42,7 @@
           //seconds
         }, 0)
     }());
-=======
+
 const year = new Date().getFullYear();
 const fourthOfJuly = new Date(year, 12,4).getTime();
 const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
@@ -83,4 +83,4 @@ let timer = setInterval(function() {
 
 }, 1000);
 
->>>>>>> e2a1e1d921ea7552e11cda31d92973dfd77d5a67
+
