@@ -1,6 +1,6 @@
 
 const year = new Date().getFullYear();
-const Fecha = new Date(year, 11,7).getTime();
+const Fecha = new Date(year, 11,15).getTime();
 const FechaNextYear = new Date(year + 1, 6, 4).getTime();
 const month = new Date().getMonth();
 
