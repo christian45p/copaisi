@@ -35,9 +35,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end text-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #114970;">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">COPABISI</h5>
+                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">COPABISI</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -388,12 +388,11 @@
 
     <!--cronograma ---------------------------------------------------------------------------------------------------------  -->
    <div class="container-fluid crono">
-    <div id="cronograma" class="container text-center text-white  mb-2 cronograma" style="padding-top: 1%;">
-        <h1 class="mb-3">Cronograma</h1>
+    <div id="cronograma" class="container text-center text-white  mb-2 cronograma">
+        <h1 class="mb-3" style="padding-top: 0.2em;">Cronograma</h1>
         <hr>
-        <br>
     </div>
-    <div class="container" style="padding-bottom: 2%;">
+    <div class="container">
         <div class="row">
                 <div class="col-lg-12">
                     <div class="table-responsive-sm">        
@@ -473,15 +472,33 @@
                 </div>
         </div>  
     </div>
+    
    </div>
        
+    <!-- Hero Banner Section -->
+    <section class="hero-banner  py-5">
+        <div class="container">
+                <div class="row row align-items-center">
+                    <div class="col-lg-5 offset-lg-1 order-lg-1">
+                        <img src="images/meet.png" class="img-fluid" alt="Web Development">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mt-3">Evento Virtual</h1>
+                        <p class="lead text-secondary my-5">El CONGRESO PERUANO ARGENTINO BOLIVIANO DE INGENIERIA DE SISTEMAS E INFORMATICA se llevará a cabo por la plataforma de videoconferencia ZOOM y será transmitido en vivo por Facebook Live.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg border">Ingresar por ZOOM <i class="fa fa-video"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-lg border">Ingresar por YouTube <i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
     <!--este div no se donde abre xd-->
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5 bg-light" >
         
         <div id="temas" class="container text-center mt-5 mb-2">
-            <h1 class="mb-3">Temas</h1>
-            <hr>
+            <h1 class="mb-3 ">Temas</h1>
+            <hr >
         </div>
 
         <div class="container mb-5">
@@ -703,8 +720,7 @@
                 </div>
             </div>
         </div>
-
-
+       
 
     </div>
     <!-- Footer -->
