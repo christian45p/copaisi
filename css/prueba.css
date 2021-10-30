@@ -1,10 +1,11 @@
+
 .moreText1{
     display: none;
 }
-.text1.show-more1 .moreText1{
+.text2.show-more1 .moreText1{
     display: inline;
 }
-.text1.show-more1 .dot1{
+.text2.show-more1 .dot1{
     display: none;
 }
 
@@ -57,5 +58,36 @@
     display: inline;
 }
 .text6.show-more6 .dot6{
+    display: none;
+}
+
+.moreText7{
+    display: none;
+}
+.text7.show-more7 .moreText7{
+    display: inline;
+}
+.text7.show-more7 .dot7{
+    display: none;
+}
+
+
+.moreText8{
+    display: none;
+}
+.text8.show-more8 .moreText8{
+    display: inline;
+}
+.text8.show-more8 .dot8{
+    display: none;
+}
+
+.moreText9{
+    display: none;
+}
+.text9.show-more9 .moreText9{
+    display: inline;
+}
+.text9.show-more9 .dot9{
     display: none;
 }
