@@ -480,13 +480,33 @@
         <h1 class="mb-3" style="padding-top: 0.2em;">Cronograma</h1>
         <hr>
     </div>
+
     <div class="container ">
-        <div class="row justify-content-center dias">
+        <div class="text-center">
+            <div class="btn-group dias" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="mostrarm();"checked >
+                <label class="btn btn-outline-primary" id="botonm" for="btnradio1">Miércoles, 15 de diciembre</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="mostrarj();" >
+                <label class="btn btn-outline-primary" id="botonj" for="btnradio2">Jueves, 16 de diciembre</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick="mostrarv();">
+                <label class="btn btn-outline-primary" id="botonv" for="btnradio3">Viernes, 17 de diciembre</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" onclick="mostrars();"">
+                <label class="btn btn-outline-primary" id="botons" for="btnradio4">Sabado, 18 de diciembre</label>
+             </div>
+        </div>
+            
+        
+
+        
+        <!--<div class="row justify-content-center dias">
         <button class="btn btn-primary col-lg-2" type="button" active>Miércoles, 15 de diciembre</button>
         <button class="btn btn-primary col-lg-2" type="button" data-toggle="collapse" data-target="#jueves" aria-expanded="false" aria-controls="jueves">Jueves, 16 de diciembre</button>
         <button class="btn btn-primary col-lg-2" type="button" data-toggle="collapse" data-target="#viernes" aria-expanded="false" aria-controls="viernes">Viernes, 17 de diciembre</button>
         <button class="btn btn-primary col-lg-2" type="button" data-toggle="collapse" data-target="#sabado" aria-expanded="false" aria-controls="sabado">Sabado, 18 de diciembre</button>
-        </div>
+        </div>-->
         <div class="row justify-content-center">
                 <div class="col-lg-6  " id="miercoles" >
                     <h2 class=" text-center text-white">Miércoles, 15 de diciembre</h2>
