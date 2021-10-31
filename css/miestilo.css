@@ -128,7 +128,12 @@
     line-height: 1em;
     height: 2em;
 }
-
+.dias{
+	padding-bottom: 2vh;
+}
+.hidden {
+	display:none;
+}
 #more {display: none;}
 
   .round {
