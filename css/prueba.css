@@ -2,10 +2,10 @@
 .moreText1{
     display: none;
 }
-.text2.show-more1 .moreText1{
+.text1.show-more1 .moreText1{
     display: inline;
 }
-.text2.show-more1 .dot1{
+.text1.show-more1 .dot1{
     display: none;
 }
 
