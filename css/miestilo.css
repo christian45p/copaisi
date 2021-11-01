@@ -7,6 +7,14 @@
 	transform: translateY(-50%);
   }
   
+.titulo_gen{
+	text-align: center;
+	color: white;
+	font-size: 4.1vh;
+	text-shadow: 5px -5px 5px #000;
+	font-weight: bold;
+	padding-top: 1.5vw;
+}
   .icon-bar a {
 	display: block;
 	text-align: center;
@@ -75,9 +83,9 @@
 	color: white;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 2.7em;
+	font-size: 1.5vh;
 	letter-spacing: 3px;
-	margin-top: 5vh;
+	margin-top: 3vh;
 }
 
 .days, .hours, .minutes, .seconds {
@@ -92,14 +100,6 @@
 
 }
 
-.titulo_gen{
-	text-align: center;
-	color: white;
-	font-size: 3.5vh;
-	text-shadow: 5px -5px 5px #000;
-	font-weight: bold;
-	padding-top: 2.1vw;
-}
 .titulo_gen2{
 	text-align: center;
 	color: white;
@@ -126,9 +126,19 @@
   
   .logos_uni2{
 	margin-top: 3%;
-	height: 24.5vh;
+	height: 20.5vh;
 	margin-left: 2vw;
 	
+  }
+  .logos_uni3{
+	margin-top: 3%;
+	height: 11.5vh;
+	margin-left: 2vw;
+  }
+  .logo_con{
+	margin-top: 3%;
+	height: 15.5vh;
+	margin-left: 2vw;
   }
   .hideContent {
     overflow: hidden;

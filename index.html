@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="css/prueba.css">
     <script src="js/countdown.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link rel="icon" href="images/copa.ico">
-    <title>Copaisi</title>
+    <title>COPABISI</title>
     <script type="text/javascript">
     
         $(document).ready(function(){
@@ -26,15 +25,17 @@
 </head>
 <body>
     <div class="icon-bar d-none d-md-block d-xll-none" style="z-index: 1;">
-        <a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
-        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook-square"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"style="background-color: #114970;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0 py-md-0"style="background-color: #114970;">
         <div class="container-fluid">
             <a class="navbar-brand " href="#" style=" font-weight: Light;">
-                COPABISI🔍</a>
+                <img src="images/LogoC.png" alt="" width="30" height="30">
+                COPABISI</a>
+                
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,7 +51,7 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-warning round btn-sm text-MUTE">¡INSCRIBIRME!</button>
+                    <button type="button" class="btn btn-warning round btn-sm text-MUTE " data-bs-toggle="modal" data-bs-target="#staticBackdrop">¡INSCRIBIRME!</button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-info text-black round btn-sm acceso" >ACCESO AL EVENTO</button>
@@ -77,31 +78,55 @@
     </nav>
     <!--TITULO-->
     
-    <div class="titulo particles-js mt-5">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Lo sentimos..</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             Aun no estan disponibles, pronto daremos inicio de las actividades :D
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="titulo particles-js mt-3">
         <div class="fondo">
                 <div class="logos ">
                     <div class="esp_titu">&nbsp;</div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                          <div class=" col-sm-3 col-lg-4">
-                            <img class="logos_uni2" src="images/LogoC.png">
-                          </div>
-                          <div class=" col-sm-6 col-lg-4">
-                            <div class="titulo_gen"> <h1>Congreso Peruano Argentino Boliviano de Ingenieria de Sistemas e Informatica</h1></div>
-                          </div>
-                        </div>
+                    <div class="container-fluid">
+                        <img class="logo_con img-fluid" src="images/congre.png">
                     </div>
+                </div>
+                <div class="container-fluid mt-3">
+                    <div class="container-fluid d-flex justify-content-center mt-100">
+                        <div class="row ">                     
+                            <div class="col-6 col-sm-4"> 
+                                <img class="img-fluid logos_uni3 " src="images/a.png">   
+                            </div>                       
+                            <div class="col-6 col-sm-4">  
+                                <img class="logos_uni3 img-fluid" src="images/b.png">   
+                            </div>           
+                            <div class="col-12 col-sm-4">   
+                                <img class="logos_uni3 img-fluid" src="images/c.png">  
+                            </div>
+                        </div> 
+                    </div>          
                 </div>
                 <div class="contador">
                     <div id="timer"></div>
                 </div>
                 <div class="titulo_gen2">Del 15 al 18 de Diciembre <br>COPABISI - 2021</div>
                 <br>
-                <div class="alert  d-none d-md-block d-xll-none" role="alert">
+                <div class="alert  d-none d-lg-block" role="alert">
                     Aun estas a tiempo de ser parte de este gran evento, Inscribete ya!✅
                 </div>
                 <div class="button_registro mt-6">
-                    <button class="button">Inscribirme</button>
+                    <button class="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Inscribirme</button>
                 </div>
             </div>
         </div> 
@@ -122,13 +147,13 @@
             <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="images/unappresent1.jpg" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
+                    <img src="images/unappresent3.jpg" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                     <img src="images/unappresent2.jpg" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px"  style="object-fit: cover;">
                     </div>
                     <div class="carousel-item" data-bs-interval="1000">
-                    <img src="images/unappresent2.jpg" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
+                    <img src="images/EPIS.png" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -188,27 +213,26 @@
             </div>
         </div>
         </div>
-        <div  class="container text-center mt-5 mb-2" style="background-color:white;">
+        <div  class="container text-center mt-5 mb-2 d-block d-sm-none" style="background-color:white;">
             <h1 class="mb-3" id="">Universidades Participantes</h1>
             <hr>
             <br>
         </div> 
-        <div class="container mt-3" style="background-color:white;">
+        <div class="container mt-3 d-block d-sm-none" style="background-color:white;">
             <div class="container d-flex justify-content-center mt-100">
-
                 <div class="row ">                     
-                    <div class="col-md-6"> 
+                    <div class="col-12"> 
                         <img class="img-fluid logos_uni " src="images/logoa.png">   
-                    </div>                       
-                    <div class=" col-lg-6">  
+                    </div> 
+                    <br>
+                    <div class=" col-12 mt-5">  
                         <img class="logos_uni img-fluid" src="images/blogo.png">   
-                    </div>   
+                    </div>  
+                    <br>
+                    <div class=" col-12 mt-5">  
+                        <img class="logos_uni img-fluid" src="images/clogo.png">   
+                    </div>  
                 </div>
-                <div class="row ">        
-                    <div class="col-md-12">   
-                        <img class="logos_uni img-fluid" src="images/clogo.png">  
-                    </div>
-                </div> 
             </div>          
         </div> 
 
@@ -254,9 +278,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn1">Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
             
                         </div>
@@ -281,9 +305,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn2">Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -307,9 +331,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn3">Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -339,9 +363,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn4" >Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -365,9 +389,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn5" >Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -391,9 +415,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn6" >Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -423,9 +447,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn7" >Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -450,9 +474,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn8" >Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -477,9 +501,9 @@
                                     <button type="button" class="btn btn-outline-dark btn-sm read-more-btn9" >Leer más...</button>
                                 </li>
                                 <ul class="list-group-item">
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li class="list-inline-item mt-3"><a><i class="fab fa-linkedin fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-twitter fa-2x"></i></a></li>
+                                <li class="list-inline-item mt-3"><a><i class="fa fa-linkedin fa-2x"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -793,8 +817,8 @@
                         <h1 class="mt-3" >Evento Virtual</h1>
              
                         <p class="lead text-secondary my-5">El CONGRESO PERUANO ARGENTINO BOLIVIANO DE INGENIERIA DE SISTEMAS E INFORMATICA se llevará a cabo por la plataforma de videoconferencia ZOOM y será transmitido en vivo por Facebook Live.</p>
-                        <a href="#" class="btn btn-outline-primary btn-lg border">Ingresar por ZOOM <i class="fa fa-video"></i></a>
-                        <a href="#" class="btn btn-outline-danger btn-lg border">Ingresar por YouTube <i class="fab fa-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-primary btn-lg border" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ingresar por ZOOM <i class="fa fa-video-camera"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-lg border" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ingresar por YouTube <i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -966,8 +990,8 @@
                                         <div class="card ">
                                             <img class="img-fluid" alt="100%x280" src="images/act1.png">
                                             <div class="card-body justify-content-center"> 
-                                                <button type="button" class="btn btn-primary">Inscribirme</button>
-                                                <button type="button" class="btn btn-success">Descargar bases</button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Inscribirme</button>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Descargar bases</button>
                                             </div>
     
                                         </div>
@@ -982,8 +1006,8 @@
                                     <div class="col-md-12 mb-3">
                                         <div class="card">
                                             <img class="img-fluid" alt="100%x280" src="images/act2.png">
-                                            <div class="card-body"> <button type="button" class="btn btn-primary">Inscribirme</button>
-                                                <button type="button" class="btn btn-success">Descargar bases</button>
+                                            <div class="card-body"> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Inscribirme</button>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Descargar bases</button>
                                             </div>
     
                                         </div>
@@ -1028,11 +1052,11 @@
 				</div>	<div class="col-xs-12 col-sm-6 col-md-6">
 					<h5 style="border-left: 3px solid #eeeeee;">Acerca de COPABISI</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Presentación</a></li>
+						<li><a href="#presentacion"><i class="fa fa-angle-double-right"></i>Presentación</a></li>
 						<li><a href="#ponentes"><i class="fa fa-angle-double-right"></i>Ponentes</a></li>
-						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Cronograma</a></li>
-						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Actividades</a></li>
-						<li><a href="#footer"><i class="fa fa-angle-double-right"></i>Contactos</a></li>
+						<li><a href="#cronograma"><i class="fa fa-angle-double-right"></i>Cronograma</a></li>
+						<li><a href="#actividades"><i class="fa fa-angle-double-right"></i>Actividades</a></li>
+						<li><a href="#acceso"><i class="fa fa-angle-double-right"></i>Evento Principal</a></li>
 					</ul>
 				</div>
 				
