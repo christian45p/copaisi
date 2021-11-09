@@ -46,9 +46,11 @@
 	color: white;
   }
   .instagram{
-	background: #C13584;
 	color: white;
+	background: orange;
+
   }
+
 .particles-js{ 
 	position:absolute; 
 	width: 100%; 
