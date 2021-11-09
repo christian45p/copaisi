@@ -1,251 +1,252 @@
-
 .icon-bar {
-	position: fixed;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-  }
-  
-.titulo_gen{
-	text-align: center;
-	color: white;
-	font-size: 4.1vh;
-	text-shadow: 5px -5px 5px #000;
-	font-weight: bold;
-	padding-top: 1.5vw;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-  .icon-bar a {
-	display: block;
-	text-align: center;
-	padding: 16px;
-	transition: all 0.3s ease;
-	color: white;
-	font-size: 20px;
-  }
-  
-  .icon-bar a:hover {
-	background-color: #000;
-  }
-  
-  .facebook {
-	background: #3B5998;
-	color: white;
-  }
-  
-  .twitter {
-	background: #55ACEE;
-	color: white;
-  } 
-  .youtube {
-	background: #bb0000;
-	color: white;
-  }
-  .whatsapp{
-	background: green;
-	color: white;
-  }
-  .instagram{
-	color: white;
-	background: orange;
 
-  }
+.titulo_gen {
+  text-align: center;
+  color: white;
+  font-size: 4.1vh;
+  text-shadow: 5px -5px 5px #000;
+  font-weight: bold;
+  padding-top: 1.5vw;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
 
-.particles-js{ 
-	position:absolute; 
-	width: 100%; 
-	height: 100%; 
-	background-image: url("../images/dots.jpg"); 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	background-position: 50% 50%; }
+.icon-bar a:hover {
+  background-color: #000;
+}
 
-.fondo{
-	width: 100%;
-	text-align: center;
-	height: 100vh;
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.whatsapp {
+  background: green;
+  color: white;
+}
+.instagram {
+  color: white;
+  background: orange;
+}
+/*
+.particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/dots.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}*/
+
+.fondo {
+  width: 100%;
+  text-align: center;
+  height: 100vh;
 }
 .alert {
-	height: 3vh;
-	line-height:30px;
-	padding:0.8vh 15px 4vh;
-	font-size: 2.2vh;
-	background: RGBA(37,111,143,0.69);
-	margin: 0 25vw 2vh 25vw;
+  height: 3vh;
+  line-height: 30px;
+  padding: 0.8vh 15px 4vh;
+  font-size: 2.2vh;
+  background: RGBA(37, 111, 143, 0.69);
+  margin: 0 25vw 2vh 25vw;
 
-	color: white;
-  }
+  color: white;
+}
 .contador {
-	position: relative;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	font-size: 0.3em;
-}
-  
-  #timer {
-	color: white;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.5vh;
-	letter-spacing: 3px;
-	margin-top: 3vh;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 0.3em;
 }
 
-.days, .hours, .minutes, .seconds {
-	display: inline-block;
-	padding: 0.9vw;
-	border-radius: 5px;
-	background: RGBA(37,111,143,0.69);	
+#timer {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  letter-spacing: 3px;
+  margin-top: 3vh;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: inline-block;
+  padding: 0.9vw;
+  border-radius: 5px;
+  background: RGBA(37, 111, 143, 0.69);
 }
 .numbers {
-	color: white;
-	font-size: 5em;
-
+  color: white;
+  font-size: 5em;
 }
 
-.titulo_gen2{
-	text-align: center;
-	color: white;
-	font-size: 3.2vh;
-	padding-top: 1.1vw;
+.titulo_gen2 {
+  text-align: center;
+  color: white;
+  font-size: 3.2vh;
+  padding-top: 1.1vw;
 }
-.titulo{
-	overflow: hidden; 
-	position: relative;
-	background-attachment: fixed; 		
-	-webkit-background-size: cover;
+.titulo {
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
 }
 .button_registro {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-  .logos_uni{
-	margin-top: 3%;
-	height: 12.5vh;
-	margin-left: 2vw;
-	
-  }
-  
-  .logos_uni2{
-	margin-top: 3%;
-	height: 20.5vh;
-	margin-left: 2vw;
-	
-  }
-  .logos_uni3{
-	margin-top: 3%;
-	height: 11.5vh;
-	margin-left: 2vw;
-  }
-  .logo_con{
-	margin-top: 3%;
-	height: 15.5vh;
-	margin-left: 2vw;
-  }
-  .hideContent {
-    overflow: hidden;
-    line-height: 1em;
-    height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.dias{
-	padding-bottom: 2vh;
+.logos_uni {
+  margin-top: 3%;
+  height: 12.5vh;
+  margin-left: 2vw;
+}
+
+.logos_uni2 {
+  margin-top: 3%;
+  height: 20.5vh;
+  margin-left: 2vw;
+}
+.logos_uni3 {
+  margin-top: 3%;
+  height: 11.5vh;
+  margin-left: 2vw;
+}
+.logo_con {
+  margin-top: 3%;
+  height: 15.5vh;
+  margin-left: 2vw;
+}
+.hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 2em;
+}
+.dias {
+  padding-bottom: 2vh;
 }
 .hidden {
-	display:none;
+  display: none;
 }
-#more {display: none;}
+#more {
+  display: none;
+}
 
-  .round {
-	border-radius: 24px;
-	margin-top: 0.5vh;
-	color: rgb(87, 82, 82);
-	letter-spacing: 0.7px;
-  }
-  .nav-item{
-	  padding-right: 1.5vh;
-  }
-  .button {
-	width: 200px;
-	height: 45px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
-	text-transform: uppercase;
-	letter-spacing: 2.5px;
-	font-weight: 500;
-	color: #fff;
-	background-color: #114970;
-	border: none;
-	border-radius: 45px;
-	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease 0s;
-	cursor: pointer;
-	outline: none;
-	}
-  
-  .button:hover {
-	background-color: #25A7E7;
-	box-shadow: 0px 8px 10px#174155;
-	color: #fff;
-	transform: translateY(-7px);
-  }
+.round {
+  border-radius: 24px;
+  margin-top: 0.5vh;
+  color: rgb(87, 82, 82);
+  letter-spacing: 0.7px;
+}
+.nav-item {
+  padding-right: 1.5vh;
+}
+.button {
+  width: 200px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #114970;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #25a7e7;
+  box-shadow: 0px 8px 10px#174155;
+  color: #fff;
+  transform: translateY(-7px);
+}
 footer {
-	background: #114970;
-  }
-#presentacion{
-	background: url("../images/Mesa_de_trabajo_9.png") no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100% ;
-	padding: 20px 0 20px 0;
-    text-align: center;
+  background: #114970;
 }
-.actividad{
-	background: url("../images/Mesa\ de\ trabajo\ –\ 10.png") no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100% ;
-	padding: 20px 0 20px 0;
+#presentacion {
+  background: url("../images/Mesa_de_trabajo_9.png") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
-.crono{
-	background-color: #114970;
+.actividad {
+  background: url("../images/Mesa\ de\ trabajo\ –\ 10.png") no-repeat fixed
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0 20px 0;
 }
-
+.crono {
+  background-color: #114970;
+}
 
 .hero-banner h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
 .hero-banner .btn {
-    position: relative;
-    overflow: hidden;
-    z-index: 9;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
 }
 .hero-banner .btn-primary {
-    color: #2f2f41;
-    background-color: rgba(1, 164, 121, 0.1);	
+  color: #2f2f41;
+  background-color: rgba(1, 164, 121, 0.1);
 }
 .hero-banner .btn:before {
-    content: "";
-    width: 4px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 .hero-banner .btn:hover:before {
-    width: 100%;
+  width: 100%;
 }
 
-.text-justify{
-	text-align: justify;
+.text-justify {
+  text-align: justify;
 }
