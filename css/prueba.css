@@ -91,3 +91,13 @@
 .text9.show-more9 .dot9{
     display: none;
 }
+
+.moreText10{
+    display: none;
+}
+.text10.show-more10 .moreText10{
+    display: inline;
+}
+.text10.show-more10 .dot10{
+    display: none;
+}
