@@ -51,14 +51,10 @@
                     <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">COPABISI</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-
-
-
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <button type="button" class="btn btn-warning round btn-sm"><a class="text-mute text-decoration-none" href="https://vriunap.pe/cursos/copabisi">¡INSCRIBIRME!</a></button>
+                        <a type="button" class="btn btn-warning round btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">¡INSCRIBIRME!</a>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-info text-black round btn-sm acceso" >ACCESO AL EVENTO</button>
@@ -94,15 +90,41 @@
                 </div>
                 <div class="modal-body">
                     Aun no esta disponible, pronto daremos inicio de las actividades :D<br> Recuerda Inscribirte en este gran evento.<br>
-                    <button type="button" class="btn btn-warning round btn-sm"><a class="text-white text-decoration-none" href="https://vriunap.pe/cursos/copabisi">¡INSCRIBIRME!</a></button>
+                    
+                <button class = "btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">INSCRIBIRME</button>
+    
                     <img class="img-fluid" src="images/logoL.jfif">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerra</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Inscripciones Abiertas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Publico Peruano:
+              <br>
+              <button type="button" class="btn btn-primary round btn-sm"><a class="text-white text-decoration-none" target="_blank" href="https://vriunap.pe/cursos/copabisi">Inscripciones Peru</a></button>
+              <br>
+              <br>
+              Publico Extranjero:
+              <br>
+              <button type="button" class="btn btn-success round btn-sm"><a class="text-white text-decoration-none" target="_blank" href="https://forms.gle/ZkJHxMueyCsQVGdb7">Inscripciones Extranjeros</a></button>
+              <br><br>
+              <img class="img-fluid" src="images/logoL.jfif">
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="titulo particles-js mt-3">
         <div class="fondo">
             <div class="logos ">
@@ -135,9 +157,9 @@
                 Aun estas a tiempo de ser parte de este gran evento, Inscribete ya!✅
             </div>
             <div class="button_registro mt-6 wow flip">
-                <button class="button"><a class="text-white  text-decoration-none" href="https://vriunap.pe/cursos/copabisi">INSCRIBIRME</a></button>
+                <button class = "button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">INSCRIBIRME</button>
             </div>
-        </div>> 
+        </div>
     </div>   
     <!--PRESENTACION--> 
 
@@ -154,14 +176,23 @@
                 <div class="col-lg-4 ">
                     <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="2000">
+                            <div class="carousel-item active" data-bs-interval="1500">
                             <img src="images/unappresent3.jpg" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
                             </div>
-                            <div class="carousel-item" data-bs-interval="2000">
+                            <div class="carousel-item" data-bs-interval="1500">
                             <img src="images/unappresent2.jpg" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px"  style="object-fit: cover;">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="1500">
                             <img src="images/EPIS.png" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                            <img src="images/UNSApresent1.png" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                            <img src="images/UNSApresent2.png" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                            <img src="images/UPDSpresent1.png" class="d-block rounded-3 img-fluid" alt="..." width="100%" height="300px" style="object-fit: cover;">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -261,6 +292,7 @@
         <div class="container mt-3">
             <div class="container-fluid d-flex justify-content-center mt-100">
                 <div class="row">                     
+                    
                     <div class="col-lg-4">
                         <div class="card mb-3 shadow rounded">
                             <div class="card-body text-center">
@@ -376,7 +408,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="col-lg-4">
                         <div class="card mb-3 shadow rounded">
                             <div class="card-body text-center"> 
@@ -747,7 +779,6 @@
         </div>   
     </div> 
 
-
     <!--cronograma ---------------------------------------------------------------------------------------------------------  -->
    <div  id="cronograma" class="container-fluid crono">
         <div>
@@ -817,17 +848,17 @@
                                     <tr class="table-success">
                                         <th scope="row">5:00 Pm  6:00 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Tutorial:</b>: “---------” <br> <b>Ponente:</b> <br>Universidad Privada Domingo Savio - Bolivia</td>
+                                        <td><b>Tutorial:</b>: “¿Cómo liderar efectivamente equipos de desarrollo de software?” <br> <b>Ponente:</b> Ingeniero Jhonny Ventiades Guillen<br>Universidad Privada Domingo Savio - Bolivia</td>
                                     </tr>
                                     <tr class="table-success">
                                         <th scope="row">6:00 Pm  7:00 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Tutorial:</b>: “---------” <br> <b>Ponente:</b> <br>Universidad Nacional del Altiplano - Perú</td>
+                                        <td><b>Tutorial:</b>: “Matemáticas en la ingeniería” <br> <b>Ponente:</b> Dra. Guina Guadalupe Sotomayor Alzamora<br>Universidad Nacional del Altiplano - Perú</td>
                                     </tr>
                                     <tr class="table-danger">
                                         <th scope="row">7:00 Pm  8:30 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Taller: </b>“---------” <br> <b>Ponente:</b> <br>Universidad Privada Domingo Savio - Bolivia</td>
+                                        <td><b>Taller: </b>“El Internet de las Cosas IOT, Hardware y Software para su gestión” <br> <b>Ponente:</b> Magister Gustavo Tantani Mamani<br>Universidad Privada Domingo Savio - Bolivia</td>
                                     </tr>
                                 </tbody>
                         </table>                  
@@ -859,7 +890,7 @@
                                     <tr class="table-info">
                                         <th scope="row">4:00 Pm  4:30 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Trabajo de Investigación: </b>“---------” <br> <b>Ponente:</b> Dr. <br>Universidad Privada Domingo Savio - Bolivia</td>
+                                        <td><b>Trabajo de Investigación: </b>“Comportamiento de un malware y técnicas de prevención y mitigación” <br> <b>Ponente:</b> Ingeniero Adolfo Choquellampa <br>Universidad Privada Domingo Savio - Bolivia</td>
                                     </tr>
 
                                     <tr class="table-info">
@@ -870,12 +901,12 @@
                                     <tr class="table-success">
                                         <th scope="row">5:00 Pm  6:00 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Tutorial:</b>: “---------” <br> <b>Ponente:</b> Dr. <br>Universidad Nacional de Salta - Argentina</td>
+                                        <td><b>Tutorial:</b>: “Plataformización, Analítica de datos e IA para la readecuación y reconversión de actividades y su proyección ascendente hacia la Industria 4.0” <br> <b>Ponentes:</b> Mag. José Ignacio Tuero & Dr. Cristian Martinez <br>Universidad Nacional de Salta - Argentina</td>
                                     </tr>
                                     <tr class="table-success">
                                         <th scope="row">6:00 Pm  7:00 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Tutorial:</b>: “---------” <br> <b>Ponente:</b> Dr. <br>Universidad Privada Domingo Savio - Bolivia</td>
+                                        <td><b>Tutorial:</b>: “Sistema automatizado de recuperación de agua residual doméstica y obtención de agua atmosférica mediante energía solar y campo solar incidente en cilindro salar para instalarse en barrios y comunidades” <br> <b>Ponente:</b> Magister Victor Yucra Solano <br>Universidad Privada Domingo Savio - Bolivia</td>
                                     </tr>
                                     <tr class="table-danger">
                                         <th scope="row">7:00 Pm  8:30 Pm</th>
@@ -902,7 +933,7 @@
                                     <tr class="table-warning">
                                         <th scope="row">2:00 Pm 3:00 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b>Ponencia Magistral:</b> “-----------”<br><b>Ponente:</b> Dr.<br>Universidad Privada Domingo Savio - Bolivia</td>
+                                        <td><b>Ponencia Magistral:</b> “Desarrollo de aplicaciones móviles híbridas multiplataforma con vue native”<br><b>Ponente:</b> Doctor Jaime Zambrana Chacon<br>Universidad Privada Domingo Savio - Bolivia</td>
                                     </tr>
                                     <tr class="table-success">
                                         <th scope="row">3:00 Pm 4:00 Pm</th>
@@ -928,7 +959,7 @@
                                     <tr class="table-success">
                                         <th scope="row">6:00 Pm  7:00 Pm</th>
                                         <td class="col-sm-2">Sala UNA</td>
-                                        <td><b><b>Tutorial:</b>:</b> “---------” <br> <b>Ponente:</b> Dr. <br>Universidad Privada Domingo Savio - Bolivia</td>
+                                        <td><b><b>Tutorial:</b>:</b> “Devops, más que una metodología” <br> <b>Ponente:</b> Ingeniero Elias Franklin Negrete Justiniano <br>Universidad Privada Domingo Savio - Bolivia</td>
                                     </tr>
                                     <tr class="table-danger">
                                         <th scope="row">7:00 Pm  8:30 Pm</th>
@@ -1211,13 +1242,16 @@
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
                                         <div class="card ">
-                                            <img class="img-fluid" alt="100%x280" src="images/act1.png">
+                                            <img class="img-fluid" alt="100%x280" src="images/act2.jpg">
                                             <div class="card-body justify-content-center"> 
-                                                <a href="https://forms.gle/drDNLPx8LEFwgLfv6" class="text-white ext-decoration-none"> 
+                                                <a href="https://forms.gle/2ekkKM1oKnZQTJi38" class="text-white ext-decoration-none"> 
                                                     <button type="button" class="btn btn-primary">Inscribirme</button>
                                                 </a>
                                                 <a href="docs/BASES_CONCURSO_V2[F].pdf" download="BASES_CONCURSO_COPABISIz" class="text-white ext-decoration-none"> 
                                                     <button type="button" class="btn btn-success" > Descargar bases</button>
+                                                </a>
+                                                <a href="https://docs.google.com/document/d/1Sj2sUg0auA8wFRdLwrSHpi_7l2O1Xn5QzDKJ_PCiuiY/edit?usp=sharing" class="text-white ext-decoration-none"> 
+                                                    <button type="button" class="btn btn-secondary" > Descargar Template</button>
                                                 </a>
                                             </div>
     
