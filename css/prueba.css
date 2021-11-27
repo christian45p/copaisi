@@ -195,3 +195,33 @@
 .text19.show-more19 .dot19{
     display: none;
 }
+
+.moreText20{
+    display: none;
+}
+.text20.show-more20 .moreText20{
+    display: inline;
+}
+.text20.show-more20 .dot20{
+    display: none;
+}
+
+.moreText21{
+    display: none;
+}
+.text21.show-more21 .moreText21{
+    display: inline;
+}
+.text21.show-more21 .dot21{
+    display: none;
+}
+
+.moreText22{
+    display: none;
+}
+.text22.show-more2 .moreText22{
+    display: inline;
+}
+.text22.show-more22 .dot22{
+    display: none;
+}
